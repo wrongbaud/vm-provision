@@ -2,9 +2,15 @@
 
 sudo apt-get update && sudo apt-get upgrade
 
-sudo apt-get install vim tmux git build-essential kpartx pulseview ghex bless ipython3 python3-pip emacs chromium-browser filezilla screen binwalk neovim wireshark gparted minicom lzma-alone unzip flashrom can-utils hexedit sigrok-firmware-fx2lafw gh openjdk-19-jdk curl jq docker npm gdb-multiarch libfuse-dev
+sudo apt-get install vim tmux git build-essential kpartx pulseview ghex bless ipython3 python3-pip emacs chromium-browser filezilla screen binwalk neovim wireshark gparted minicom lzma-alone unzip flashrom can-utils hexedit sigrok-firmware-fx2lafw gh openjdk-19-jdk curl jq docker npm gdb-multiarch libfuse-dev dfu-util libglfw3 libmbedtls14
 
 sudo snap install --classic code
+
+# Install ImHex
+
+wget https://github.com/WerWolv/ImHex/releases/download/v1.28.0/imhex-1.28.0-Ubuntu-22.04-x86_64.deb
+
+sudo dpkg -i imhex-1.28.0-Ubuntu-22.04-x86_64.deb
 
 # Grab latest ghidra relase
 
@@ -48,5 +54,7 @@ cd 010editor
 curl -LO https://github.com/WerWolv/ImHex/releases/download/v1.25.0/imhex-1.25.0.AppImage
 chmod +x imhex-1.25.0.AppImage
 ./imhex-1.25.0.AppImage
+
+wget https://i.imgur.com/B5cktxT.jpeg 
 
 popd
