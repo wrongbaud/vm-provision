@@ -2,9 +2,13 @@
 
 sudo apt-get update && sudo apt-get upgrade
 
-sudo apt-get install vim tmux git build-essential kpartx pulseview ghex bless ipython3 python3-pip emacs chromium-browser filezilla screen binwalk neovim wireshark gparted minicom lzma-alone unzip flashrom can-utils hexedit sigrok-firmware-fx2lafw gh openjdk-19-jdk curl jq docker npm gdb-multiarch libfuse-dev dfu-util libglfw3 libmbedtls14
+sudo apt-get install vim tmux git build-essential kpartx pulseview ghex bless ipython3 python3-pip emacs chromium-browser filezilla screen binwalk neovim wireshark gparted minicom lzma-alone unzip flashrom can-utils hexedit sigrok-firmware-fx2lafw gh openjdk-19-jdk curl jq docker npm gdb-multiarch libfuse-dev dfu-util libglfw3 libmbedtls14 net-tools uftpd
 
 sudo snap install --classic code
+
+# Set up networking for gadget
+
+sudo cp Raspi\ Gadget.nmconnection /etc/NetworkManager/system-connections
 
 # Install ImHex
 

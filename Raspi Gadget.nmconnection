@@ -1,0 +1,16 @@
+[connection]
+id=Raspi Gadget
+uuid=04b2ac95-d887-4bbc-8b0f-dd6f155be279
+type=ethernet
+
+[ethernet]
+
+[ipv4]
+address1=10.0.0.3/24
+method=manual
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]
